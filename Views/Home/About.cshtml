@@ -1,0 +1,68 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About XYZ Detective Agency</title>
+    <meta name="viewport" content="width=device-width" />
+    <style>
+        body {
+            background-image: url('../Content/spying.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        article {
+            background-color: linen;
+            width: 50%;
+            border-radius: 30px;
+            box-shadow: 1px 1px black;
+            padding: 20px;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 1px 1px black;
+        }
+
+        a:active {
+            color: red;
+            background-color: white;
+        }
+
+        a:visited {
+            color: white;
+            background-color: darkblue;
+        }
+
+        a:hover {
+            color: black;
+            background-color: lightblue;
+            text-decoration: none;
+            border-radius: 20px;
+            box-shadow: 1px 1px black;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h2>XYZ Detective Agency</h2>
+
+        <p>
+            Our agency was founded in 1960 by Scooby and Scrappy Doo.
+            The agency expanded in the 1980's across the United States and is now the top
+            agency in the midwest.
+        </p>
+        <p>
+            In 2000, the agency expanded to Europe and in 2020, the agency will also be
+            in Africa and Austrailia.
+        </p>
+        @Html.ActionLink("Return", "Index", "Home")
+    </article>
+</body>
+</html>
